@@ -34,4 +34,4 @@ The demo works out of the box with PriceRules' onboarding sample data (`price/se
 
 ## Screenshots
 
-`docs/screenshot.png` and `docs/cart.png` (README) were taken against a local mock of the API built from `contract/api-contract.json` (not in this repo); replace them with real ones when convenient (1440px wide, light theme, `ACME-BUILD`).
+`docs/screenshot.png` and `docs/cart.png` (README) are taken against the real PriceRules API with the sample data loaded (`PRICERULES_API_KEY` from `.env.local`, no `PRICERULES_BASE_URL`): 1440×1020, light theme, customer `ACME-BUILD`. The catalog is the top of `/`. The cart holds FAS-1001 × 49, TOL-2001 × 2 and VLV-302 × 4, then FAS-1001 is raised to 50 (the volume break) and the full page is captured. Make sure no older `next start` is still holding the port, or the shots come from that server.
