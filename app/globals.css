@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f6f3;
+  --surface: #ffffff;
+  --surface-muted: #f1f1ed;
+  --foreground: #16181d;
+  --muted: #5a606c;
+  --line: #e3e3de;
+  --accent: #1f4fd1;
+  --accent-foreground: #ffffff;
+  --accent-soft: #edf1fd;
+  --accent-ink: #1a43b3;
+  --saving: #0f7a3d;
+  --saving-soft: #e6f4ea;
+  --warning: #8a5300;
+  --warning-soft: #fdf3dc;
+  --danger: #b42318;
+  --danger-soft: #fdecea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0e1014;
+    --surface: #171a20;
+    --surface-muted: #1d2129;
+    --foreground: #eceef2;
+    --muted: #a3a9b5;
+    --line: #2a2f39;
+    --accent: #7da3ff;
+    --accent-foreground: #0b1430;
+    --accent-soft: #1b2440;
+    --accent-ink: #a9c1ff;
+    --saving: #63d394;
+    --saving-soft: #13301f;
+    --warning: #f1c35a;
+    --warning-soft: #33280e;
+    --danger: #ff8f85;
+    --danger-soft: #3a1714;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+  --color-saving: var(--saving);
+  --color-saving-soft: var(--saving-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Prices line up when they change. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
